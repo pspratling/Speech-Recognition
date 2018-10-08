@@ -13,6 +13,7 @@ def audio_to_mfcc(audio_path):
     padded_mfcc = np.pad(mfcc, pad_width=((0, 0), (0, pad_width)), mode='constant')
     return padded_mfcc
 
+
 #getting list of words
 words = [word for word in os.listdir('../../data') if isdir('../../data/{}'.format(word))]
 #creating directories in data for training, validation, and test sets
